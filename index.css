@@ -7,15 +7,19 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-x: hidden;
+  width: 100%;
 }
+
 #parent-div {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: auto;
-  background-color: pink;
-  overflow-y: scroll;
+  overflow-x: hidden;
   background-color: rgb(29, 27, 27);
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 
 #section__header {
@@ -44,15 +48,51 @@ html {
   width: 95%;
 }
 
+#subsection__phone a {
+  color: aliceblue;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#subsection__phone a:hover {
+  color: rgb(233, 192, 10);
+}
+
 #subsection__nav {
   background-color: white;
   color: black;
-  font-size: 1.8em;
   text-align: right;
   display: flex;
+  font-size: 1.8em;
   flex-direction: row;
   justify-content: center;
   column-gap: 2%;
+}
+
+#subsection__nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#subsection__nav li {
+  margin: 0;
+  padding: 0;
+}
+
+#subsection__nav a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#subsection__nav a:hover {
+  color: rgb(233, 192, 10);
 }
 
 #subsection__logo {
@@ -155,10 +195,9 @@ html {
 }
 .section__foods {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  align-items: last baseline;
   justify-content: center;
-  height: 56vh;
+  height: 70vh;
   width: 100%;
 }
 .subsection__items {
@@ -167,32 +206,60 @@ html {
   align-items: center;
   justify-content: center;
   column-gap: 2%;
-  height: 42vh;
+  height: 60vh;
   width: 70%;
 }
-[id^="item"] {
-  height: 100%;
+.food-item {
+  position: relative;
   flex: 1;
-  background-image: url("./assests/food.png");
+  height: 100%;
+  column-gap: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#watermark {
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  background-color: orange;
+  opacity: 0.7;
+  border-radius: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40%;
+}
+#watermark-text {
+  font-family: Poppins;
+  position: relative;
+  color: black;
+  font-size: 2em;
+  font-weight: 700;
+  z-index: 3;
+}
+
+#food-image {
+  position: relative;
+  background-image: url("./assests/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#watermark{
-  position: relative;
-  height: 90%;
-  width: 90%;
-  border-radius: 50%;
-  background-color: orange;
-  opacity: 0.7;
+  flex: 3;
+  width: 100%;
   z-index: 1;
 }
-
+#food-footer {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  background-color: rgb(29, 27, 27);
+  z-index: 4;
+}
 .section__menu {
   width: 100%;
   height: 100vh;
@@ -291,7 +358,7 @@ html {
   align-items: center;
   font-size: 1em;
 }
-#card-subtitle a{
+#card-subtitle a {
   color: aliceblue;
 }
 #card-content {
@@ -354,82 +421,93 @@ html {
 }
 
 #section__footer {
-  height: 70vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  background-color: rgb(29, 27, 27);
 }
 
 #subsection__copyright {
   display: flex;
-  /* background-color: rgb(43, 46, 46); */
-  flex: 1;
   width: 100%;
   color: aliceblue;
   font-size: 1em;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
+  background-color: rgb(71, 66, 66);
 }
 #subsection__contact {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 60vh;
   width: 100%;
+  padding: 40px 0;
+  background-color: rgb(29, 27, 27);
 }
 .boxes {
-  height: 70vh;
   width: 80%;
   display: flex;
   flex-direction: row;
   column-gap: 4%;
   align-items: center;
   justify-content: center;
+  background-color: rgb(29, 27, 27);
 }
 .box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex: 1;
   height: 100%;
   width: 100%;
+  gap: 2vh;
 }
-.box h1 {
+.box h3 {
   color: aliceblue;
   font-size: 2em;
   font-weight: 700;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  margin: 0;
+  padding: 0;
 }
 
 .box p {
   color: aliceblue;
   font-size: 1.5em;
   font-weight: 700;
-  padding-top: 2vh;
-  padding-bottom: 5vh;
+  margin: 0;
+  padding: 0;
 }
 
 .box a {
   color: rgb(255, 174, 0);
   font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 #icon-space {
+  background-color: greenyellow;
+  background-image: url("./assests/icon.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 10vh;
   width: 22%;
   border-radius: 50%;
-  background-color: greenyellow;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 .box img {
   height: 60%;
-  padding: 12%;
-  margin-top: 5%;
+  width: auto;
+  max-width: 100%;
 }
 
 .custom-textbox {
@@ -441,6 +519,7 @@ html {
   outline: none;
   box-sizing: border-box;
   margin-right: 20px;
+  padding-left: 20px;
 }
 #read-button-2 {
   background-color: greenyellow;
@@ -451,3 +530,6 @@ html {
   font-size: 0.8em;
   border-radius: 4vh;
 }
+
+
+

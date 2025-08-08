@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>FoodCircles</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index-1.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -21,200 +24,280 @@
     <div id="parent-div">
       <header id="section__header">
         <div id="subsection__logo"></div>
-        <div id="subsection__phone">Phn: +91-9932275858</div>
-        <div id="subsection__nav">
-          <div id="nav__home">HOME</div>
-          <div id="nav__contact">LANDING</div>
-          <div id="nav__about">ABOUT</div>
-          <div id="nav__menu">MENU</div>
-          <div id="nav__team">TEAM</div>
-          <div id="nav__contact">CONTACT</div>
-        </div>
+        <address id="subsection__phone">
+          Ph: <a href="tel:+919932275858">+91-9932275858</a>
+        </address>
+        <nav id="subsection__nav" aria-label="Main navigation">
+          <div class="hamburger" id="hamburger">
+            &#9776;
+          </div>
+          <ul class="nav-links">
+            <li><a href="#home" id="nav__home">HOME</a></li>
+            <li><a href="#landing" id="nav__landing">LANDING</a></li>
+            <li><a href="#about" id="nav__about">ABOUT</a></li>
+            <li><a href="#menu" id="nav__menu">MENU</a></li>
+            <li><a href="#team" id="nav__team">TEAM</a></li>
+            <li><a href="#contact" id="nav__contact">CONTACT</a></li>
+          </ul>
+        </nav>
         <div class="logo-wrapper">
           <img src="./assests/logo.png" alt="FoodCircles Logo" />
         </div>
       </header>
-      <div id="section__banner">
-        <div class="subsection__caption">
-          <div id="caption__logo">
-            <div id="offer-logo">
-              <div id="offer-percentage">40%</div>
-              <div id="offer-type">BUSINESS <br />LUNCH</div>
-            </div>
-          </div>
-          <div id="caption__title">NEW RESTAURANT</div>
-          <div id="caption__desc">Where every ingredient tells a story</div>
-          <div id="caption__read">
-            <button id="read-button">READ MORE</button>
-          </div>
-        </div>
-      </div>
-      <div class="section__foods">
-        <div class="subsection__items">
-          <div id="item-1"></div>
-          <div id="item-2"></div>
-          <div id="item-3"></div>
-        </div>
-      </div>
-      <div class="section__menu">
-        <div class="subsection__menu">
-          <div id="menu__area">
-            <div id="menu__title">Lorem ipsum dolor</div>
-            <div id="menu__price">$4</div>
-            <div id="menu__subtitle">CROSSIANT WITH TOPPING</div>
-            <div id="menu__description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Consectetur est totam nisi laborum optio labore! Ex repellendus
-              recusandae laborum accusantium, et ea inventore ipsa quo est
-              quaerat adipisci rerum at.
-            </div>
-          </div>
-          <div id="menu__image"></div>
-        </div>
-      </div>
 
-      <div class="section__foods">
-        <div class="subsection__items">
-          <div id="item-1"></div>
-          <div id="item-2"></div>
-          <div id="item-3"></div>
-        </div>
-      </div>
-      <div class="section__menu">
-        <div class="subsection__menu">
-          <div id="menu__image"></div>
-          <div id="menu__area">
-            <div id="menu__title">Lorem ipsum dolor</div>
-            <div id="menu__price">$4</div>
-            <div id="menu__subtitle">CROSSIANT WITH TOPPING</div>
-            <div id="menu__description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Consectetur est totam nisi laborum optio labore! Ex repellendus
-              recusandae laborum accusantium, et ea inventore ipsa quo est
-              quaerat adipisci rerum at.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section__foods">
-        <div class="subsection__items">
-          <div id="item-1">
-            <div id="watermark"></div>
-          </div>
-          <div id="item-2"></div>
-          <div id="item-3"></div>
-        </div>
-      </div>
-      <div class="section__menucard">
-        <div class="subsection__menucard">
-          <div id="card-title">View Our Menu</div>
-          <div id="card-subtitle">
-            Sample Text. Click to select the Text element.Image from &nbsp;<a href="#">freepik</a>
-          </div>
-          <div id="card-content">
-            <div id="upper-card">
-              <div id="card">
-                <div id="card-image"></div>
-                <div id="card-name">HOT PIZZA</div>
-                <div id="card-button">
-                  <button id="card-read-button">READ MORE</button>
-                </div>
-              </div>
-              <div id="card">
-                <div id="card-image"></div>
-                <div id="card-name">HOT PIZZA</div>
-                <div id="card-button">
-                  <button id="card-read-button">READ MORE</button>
-                </div>
+      <main>
+        <section id="section__banner" aria-label="Hero banner">
+          <div class="subsection__caption">
+            <div id="caption__logo">
+              <div id="offer-logo">
+                <div id="offer-percentage">40%</div>
+                <div id="offer-type">BUSINESS <br />LUNCH</div>
               </div>
             </div>
-            <div id="upper-card">
-              <div id="card">
-                <div id="card-image"></div>
-                <div id="card-name">HOT PIZZA</div>
-                <div id="card-button">
-                  <button id="card-read-button">READ MORE</button>
-                </div>
-              </div>
-              <div id="card">
-                <div id="card-image"></div>
-                <div id="card-name">HOT PIZZA</div>
-                <div id="card-button">
-                  <button id="card-read-button">READ MORE</button>
-                </div>
-              </div>
+            <h1 id="caption__title">NEW RESTAURANT</h1>
+            <p id="caption__desc">Where every ingredient tells a story</p>
+            <div id="caption__read">
+              <button id="read-button">READ MORE</button>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="section__menu">
-        <div class="subsection__menu">
-          <div id="menu__area">
-            <div id="menu__title">Lorem ipsum dolor</div>
-            <div id="menu__price">$4</div>
-            <div id="menu__subtitle">CROSSIANT WITH TOPPING</div>
-            <div id="menu__description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Consectetur est totam nisi laborum optio labore! Ex repellendus
-              recusandae laborum accusantium, et ea inventore ipsa quo est
-              quaerat adipisci rerum at.
-            </div>
-          </div>
-          <div id="menu__image"></div>
-        </div>
-      </div>
-      <div id="section__banner">
-        <div class="subsection__caption">
-          <div id="caption__logo">
-            <div id="offer-logo">
-              <div id="offer-percentage">40%</div>
-              <div id="offer-type">BUSINESS <br />LUNCH</div>
-            </div>
-          </div>
-          <div id="caption__desc" style="font-size: 2.5em">
-            Keep up to date with us.
-          </div>
-          <div id="caption__title">
-            Sample Text. Click to select the text element
-          </div>
-          <div id="caption__read">
-            <input type="text" class="custom-textbox" >
+        </section>
 
-            <button id="read-button-2">READ MORE</button>
+        <section class="section__foods" aria-label="Featured food items">
+          <div class="subsection__items">
+            <article id="item-1" class="food-item">
+              <div id="food-image"></div>
+              <div id="watermark">
+                <div id="watermark-text">LOREM</div>
+              </div>
+
+              <div id="food-footer"></div>
+            </article>
+            <article id="item-2" class="food-item">
+              <div id="food-image"></div>
+              <div id="watermark">
+                <div id="watermark-text">LOREM</div>
+              </div>
+
+              <div id="food-footer"></div>
+            </article>
+            <article id="item-3" class="food-item">
+              <div id="food-image"></div>
+              <div id="watermark">
+                <div id="watermark-text">LOREM</div>
+              </div>
+
+              <div id="food-footer"></div>
+            </article>
           </div>
-        </div>
-      </div>
+        </section>
+
+        <section class="section__menu" aria-label="Menu showcase">
+          <div class="subsection__menu">
+            <article id="menu__area">
+              <h2 id="menu__title">Lorem ipsum dolor</h2>
+              <p id="menu__price">$4</p>
+              <h3 id="menu__subtitle">CROSSIANT WITH TOPPING</h3>
+              <p id="menu__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur est totam nisi laborum optio labore! Ex repellendus
+                recusandae laborum accusantium, et ea inventore ipsa quo est
+                quaerat adipisci rerum at.
+              </p>
+            </article>
+            <figure id="menu__image" aria-label="Menu item image"></figure>
+          </div>
+        </section>
+
+        <section class="section__foods" aria-label="Additional food items">
+          <div class="subsection__items">
+            <article id="item-1" class="food-item">
+              <div id="food-image"></div>
+              <div id="watermark">
+                <div id="watermark-text">LOREM</div>
+              </div>
+
+              <div id="food-footer"></div>
+            </article>
+            <article id="item-2" class="food-item">
+              <div id="food-image"></div>
+              <div id="watermark">
+                <div id="watermark-text">LOREM</div>
+              </div>
+
+              <div id="food-footer"></div>
+            </article>
+            <article id="item-3" class="food-item">
+              <div id="food-image"></div>
+              <div id="watermark">
+                <div id="watermark-text">LOREM</div>
+              </div>
+
+              <div id="food-footer"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section__menu" aria-label="Menu showcase alternate">
+          <div class="subsection__menu">
+            <figure id="menu__image" aria-label="Menu item image"></figure>
+            <article id="menu__area">
+              <h2 id="menu__title">Lorem ipsum dolor</h2>
+              <p id="menu__price">$4</p>
+              <h3 id="menu__subtitle">CROSSIANT WITH TOPPING</h3>
+              <p id="menu__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur est totam nisi laborum optio labore! Ex repellendus
+                recusandae laborum accusantium, et ea inventore ipsa quo est
+                quaerat adipisci rerum at.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section__foods" aria-label="Special food items">
+          <div class="subsection__items">
+            <article id="item-1" class="food-item">
+              <div id="food-image"></div>
+              <div id="watermark">
+                <div id="watermark-text">LOREM</div>
+              </div>
+
+              <div id="food-footer"></div>
+            </article>
+            <article id="item-2" class="food-item">
+              <div id="food-image"></div>
+              <div id="watermark">
+                <div id="watermark-text">LOREM</div>
+              </div>
+
+              <div id="food-footer"></div>
+            </article>
+            <article id="item-3" class="food-item">
+              <div id="food-image"></div>
+              <div id="watermark">
+                <div id="watermark-text">LOREM</div>
+              </div>
+
+              <div id="food-footer"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section__menucard" aria-label="Menu cards">
+          <div class="subsection__menucard">
+            <header>
+              <h2 id="card-title">View Our Menu</h2>
+              <p id="card-subtitle">
+                Sample Text. Click to select the Text element.Image from
+                &nbsp;<a href="#">freepik</a>
+              </p>
+            </header>
+            <div id="card-content">
+              <div id="upper-card">
+                <article id="card" class="menu-card">
+                  <figure id="card-image" aria-label="Hot pizza image"></figure>
+                  <h3 id="card-name">HOT PIZZA</h3>
+                  <div id="card-button">
+                    <button id="card-read-button">READ MORE</button>
+                  </div>
+                </article>
+                <article id="card" class="menu-card">
+                  <figure id="card-image" aria-label="Hot pizza image"></figure>
+                  <h3 id="card-name">HOT PIZZA</h3>
+                  <div id="card-button">
+                    <button id="card-read-button">READ MORE</button>
+                  </div>
+                </article>
+              </div>
+              <div id="upper-card">
+                <article id="card" class="menu-card">
+                  <figure id="card-image" aria-label="Hot pizza image"></figure>
+                  <h3 id="card-name">HOT PIZZA</h3>
+                  <div id="card-button">
+                    <button id="card-read-button">READ MORE</button>
+                  </div>
+                </article>
+                <article id="card" class="menu-card">
+                  <figure id="card-image" aria-label="Hot pizza image"></figure>
+                  <h3 id="card-name">HOT PIZZA</h3>
+                  <div id="card-button">
+                    <button id="card-read-button">READ MORE</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section__menu" aria-label="Menu showcase final">
+          <div class="subsection__menu">
+            <article id="menu__area">
+              <h2 id="menu__title">Lorem ipsum dolor</h2>
+              <p id="menu__price">$4</p>
+              <h3 id="menu__subtitle">CROSSIANT WITH TOPPING</h3>
+              <p id="menu__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur est totam nisi laborum optio labore! Ex repellendus
+                recusandae laborum accusantium, et ea inventore ipsa quo est
+                quaerat adipisci rerum at.
+              </p>
+            </article>
+            <figure id="menu__image" aria-label="Menu item image"></figure>
+          </div>
+        </section>
+
+        <section id="section__banner" aria-label="Newsletter signup">
+          <div class="subsection__caption">
+            <div id="caption__logo">
+              <div id="offer-logo">
+                <div id="offer-percentage">40%</div>
+                <div id="offer-type">BUSINESS <br />LUNCH</div>
+              </div>
+            </div>
+            <h2 id="caption__desc" style="font-size: 2.5em">
+              Keep up to date with us.
+            </h2>
+            <p id="caption__title">
+              Sample Text. Click to select the text element
+            </p>
+            <form id="caption__read" aria-label="Newsletter signup form">
+              <input
+                type="email"
+                class="custom-textbox"
+                aria-label="Email address"
+              />
+              <button type="submit" id="read-button-2">READ MORE</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
       <footer id="section__footer">
         <div id="subsection__contact">
           <div class="boxes">
-            <div class="box">
-              <div id="icon-space">
-                <img src="./assests/icon.png" alt="icon-image">
-              </div>
-              
-              <h1>CHART TO US</h1>
+            <article class="box">
+              <div id="icon-space"></div>
+              <h3>CHART TO US</h3>
               <p>Our Friendly team is here to help</p>
-              <a href="www.google.com">hi@ourcompany.com</a>
-            </div>
-            <div class="box">
-              <div id="icon-space">
-                <img src="./assests/icon.png" alt="icon-image">
-              </div>
-              <h1>CHART TO US</h1>
+              <a href="mailto:hi@ourcompany.com">hi@ourcompany.com</a>
+            </article>
+            <article class="box">
+              <div id="icon-space"></div>
+              <h3>CHART TO US</h3>
               <p>Our Friendly team is here to help</p>
-              <a href="www.google.com">hi@ourcompany.com</a>
-            </div>
-            <div class="box">
-              <div id="icon-space">
-                <img src="./assests/icon.png" alt="icon-image">
-              </div>
-              <h1>CHART TO US</h1>
+              <a href="mailto:hi@ourcompany.com">hi@ourcompany.com</a>
+            </article>
+            <article class="box">
+              <div id="icon-space"></div>
+              <h3>CHART TO US</h3>
               <p>Our Friendly team is here to help</p>
-              <a href="www.google.com">hi@ourcompany.com</a>
-            </div>
+              <a href="mailto:hi@ourcompany.com">hi@ourcompany.com</a>
+            </article>
           </div>
         </div>
-        <div id="subsection__copyright">Copyright &copy; FoodCircles</div>
+        <div id="subsection__copyright">
+          <p>Copyright &copy; <time datetime="2024">2024</time> FoodCircles</p>
+        </div>
       </footer>
     </div>
   </body>

@@ -1,0 +1,54 @@
+@media (max-width: 420px) {
+  #subsection__phone {
+    font-size: 1em;
+  }
+  #subsection__logo {
+    width: 10%;
+  }
+  .logo-wrapper {
+    position: absolute;
+    left: 20px;
+    z-index: 1;
+  }
+  .logo-wrapper img {
+    height: 8vh;
+  }
+  #section__header {
+    height: 6vh;
+  }
+  .nav-links li {
+    display: none;
+  }
+  #subsection__nav {
+    font-size: 1em;
+  }
+
+  .hamburger {
+    display: block;
+    padding-left: 80%;
+  }
+  #section__banner {
+    height: 26vh;
+  }
+  .subsection__caption {
+    background-color: pink;
+    height: 20vh;
+  }
+  #caption__logo {
+    background-color: aliceblue;
+    height: 8vh;
+  }
+  #offer-logo {
+  background-color: greenyellow;
+  height: 100%;
+  width: 60%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+}
+#offer-percentage {
+  font-size: 1em;
+}
