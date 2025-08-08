@@ -1,14 +1,12 @@
 @media (max-width: 420px) {
   #subsection__phone {
-    font-size: 1em;
+    font-size: 0.6em;
   }
   #subsection__logo {
     width: 10%;
   }
   .logo-wrapper {
-    position: absolute;
     left: 20px;
-    z-index: 1;
   }
   .logo-wrapper img {
     height: 8vh;
@@ -25,30 +23,170 @@
 
   .hamburger {
     display: block;
-    padding-left: 80%;
+    padding-left: 90%;
   }
   #section__banner {
     height: 26vh;
   }
   .subsection__caption {
-    background-color: pink;
-    height: 20vh;
+    height: 24vh;
+    width: 60%;
+    margin-left: 8%;
   }
   #caption__logo {
-    background-color: aliceblue;
-    height: 8vh;
+    height: 100%;
+    margin: 0;
   }
   #offer-logo {
-  background-color: greenyellow;
-  height: 100%;
-  width: 60%;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 50px;
-}
-#offer-percentage {
-  font-size: 1em;
+    height: 100%;
+    width: 35%;
+    margin: 0;
+    row-gap: 0;
+  }
+  #offer-percentage {
+    font-size: 1.8em;
+    padding-top: 5px;
+  }
+  #offer-type {
+    font-size: 0.5em;
+  }
+
+  #caption__title {
+    margin-top: 4%;
+    font-size: 0.8em;
+    height: 1vh;
+  }
+  #caption__desc {
+    line-height: 3vh;
+    font-size: 2em;
+    height: 30vh;
+  }
+  #read-button {
+    height: 3vh;
+    width: 30%;
+    font-size: 0.5em;
+    border-radius: 10%;
+  }
+  .section__foods {
+    height: 20vh;
+  }
+  .subsection__items {
+    height: 18vh;
+    width: 90%;
+  }
+  #watermark-text {
+    font-size: 1em;
+  }
+  .section__menu {
+    height: 25vh;
+  }
+
+  .subsection__menu {
+    height: 23vh;
+    width: 80%;
+  }
+  #menu__area {
+    height: 23vh;
+  }
+
+  #menu__image {
+    height: 100%;
+    border-radius: 10%;
+  }
+  #menu__title {
+    height: 15vh;
+    font-size: 1.5em;
+  }
+  #menu__price {
+    height: 8vh;
+    font-size: 1em;
+  }
+  #menu__subtitle {
+    height: 8vh;
+    font-size: 0.8em;
+  }
+  #menu__description {
+    display: none;
+  }
+  .section__menucard {
+    height: 50vh;
+  }
+  .subsection__menucard {
+    height: 45vh;
+    width: 90%;
+  }
+  #card-title {
+    height: 2.5vh;
+    font-size: 1.5em;
+  }
+  #card-subtitle {
+    height: 2.5vh;
+    font-size: 0.7em;
+  }
+  #card-read-button {
+    height: 2vh;
+    font-size: 0.4em;
+    border-radius: 4vh;
+  }
+  #card-image {
+    height: 15vh;
+    border-radius: 2.5vh;
+  }
+  #card-name {
+    line-height: 2.5vh;
+    font-size: 0.8em;
+  }
+  .custom-textbox {
+    height: 3vh;
+    border-radius: 2vh;
+    margin-right: 10px;
+    padding-left: 10px;
+  }
+  #caption__title-2 {
+    display: none;
+  }
+  #caption__desc-2 {
+    line-height: 3.5vh;
+    font-size: 1.5em;
+  }
+  #read-button-2 {
+    height: 3vh;
+    width: 30%;
+    font-size: 0.5em;
+    border-radius: 2vh;
+  }
+  #section__footer {
+    height: 17vh;
+    padding-top: 10px;
+  }
+
+  #subsection__copyright {
+    height: 2vh;
+    font-size: 0.7em;
+    padding:0;
+  }
+  #subsection__contact {
+    padding:0;
+    height: 15vh;
+  }
+  .boxes {
+    height: 90%;
+    width: 90%;
+    column-gap: 4%;
+  }
+  .box h3 {
+    font-size: 0.8em;
+  }
+
+  .box p {
+    display: none;
+  }
+
+  .box a {
+    font-size: 0.5em;
+  }
+  #icon-space {
+    height: 5vh;
+    width: 35%;
+  }
 }
