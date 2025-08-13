@@ -1,4 +1,4 @@
-@media (max-width: 420px) {
+@media (max-width: 426px) {
   #subsection__phone {
     font-size: 0.6em;
   }
@@ -163,10 +163,10 @@
   #subsection__copyright {
     height: 2vh;
     font-size: 0.7em;
-    padding:0;
+    padding: 0;
   }
   #subsection__contact {
-    padding:0;
+    padding: 0;
     height: 15vh;
   }
   .boxes {
